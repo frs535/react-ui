@@ -1,6 +1,6 @@
 {
   "name": "@frs535/react-ui",
-  "private": true,
+  "private": false,
   "version": "0.0.3",
   "packageManager": "pnpm@8.4.0",
   "repository": {
