@@ -1,11 +1,11 @@
 {
-  "name": "vite-component-library-template",
-  "private": false,
-  "version": "2.0.4",
+  "name": "@frs535/react-ui",
+  "private": true,
+  "version": "0.0.3",
   "packageManager": "pnpm@8.4.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/IgnacioNMiranda/vite-component-library-template"
+    "url": "https://npm.pkg.github.com/frs535/react-ui"
   },
   "main": "./dist/vite-component-library-template.umd.js",
   "module": "./dist/vite-component-library-template.es.js",
@@ -19,7 +19,7 @@
     "./dist/style.css": "./dist/style.css"
   },
   "engines": {
-    "node": "18"
+    "node": "20"
   },
   "scripts": {
     "dev": "storybook dev -p 6006",
@@ -31,6 +31,14 @@
     "test:cov": "vitest run --coverage",
     "prepare": "husky install",
     "prepack": "json -f package.json -I -e \"delete this.devDependencies; delete this.dependencies\""
+  },
+  "files": [
+    "dist"
+  ],
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx,json,css,md}": [
+      "prettier -w"
+    ]
   },
   "dependencies": {
     "react": "18.2.0",
@@ -80,13 +88,5 @@
   "peerDependencies": {
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  },
-  "files": [
-    "dist"
-  ],
-  "lint-staged": {
-    "*.{ts,tsx,js,jsx,json,css,md}": [
-      "prettier -w"
-    ]
   }
 }
