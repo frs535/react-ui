@@ -13,8 +13,8 @@
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js"
+      "import": "./dist/vite-component-library-template.es.js",
+      "require": "./dist/vite-component-library-template.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
